@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+</head>
+<body>
+  <div class="container text-center" style="border: 1px solid #ccc; border-radius: 5px; position: relative; top: 30px;">
+    <div class="row"><div class="col-12"><h1>Calculadora</h1></div></div>
+    <div class="row justify-content-center">
+      <div class="col-10" style="border: 1px solid #ccc; border-radius: 5mm; margin: 10px; background-color:aliceblue; height: 50px;"><p style="text-align: center; line-height: 50px;">{{result}}</p></div>
+    </div>
+
+    <div class="row justify-content-center" style="margin: 5px; padding: 5px;">
+      <div class="col-lg-5 " style="background-color: aliceblue; margin-bottom: 10px; margin: 10px ;border: 1px solid #ccc; border: 1px solid #ccc; border-radius: 5mm;">
+        
+        <div class="row justify-content-center" style="margin-top: 10px; margin: 5px;">
+
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('7')"><h1>7</h1></button>
+          </div>
+          <div class="col-4">
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('8')"><h1>8</h1></button>
+          </div>
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('9')"><h1>9</h1></button>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 10px; margin: 5px;">
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('4')"><h1>4</h1></button>
+          </div>
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('5')"><h1>5</h1></button>
+          </div>
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('6')"><h1>6</h1></button>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 10px; margin: 5px;">
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('1')"><h1>1</h1></button>
+          </div>
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('2')"><h1>2</h1></button>
+          </div>
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('3')"><h1>3</h1></button>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 10px; margin: 5px;">
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('0')"><h1>0</h1></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-5 align-self-center" style="border: 1px solid #ccc; border-radius: 5mm; background-color: aliceblue; margin: 10px; margin-bottom: 20px;">
+        <div class="row justify-content-center" style="margin-top: 10px; margin: 5px;">
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('+')"><h1>+</h1></button>
+          </div>
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('-')"><h1>-</h1></button>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 10px; margin: 5px;">
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('*')"><h1>*</h1></button>
+          </div>
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clickOperator('/')"><h1>/</h1></button>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="margin-top: 10px; margin: 5px;">
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="clear()"><h1>CE</h1></button>
+          </div>
+          <div class="col-4" >
+            <button class="btn btn-dark" style="width: 100px; height: 100px;" (click)="calculate()"><h1>=</h1></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-4" >
+        <button class="btn btn-danger" style="border: 1px solid #ccc; border-radius: 5mm; width: 120px; height: 90px;" (click)="cambiarruta()">Sustentación</button>
+      </div> 
+    </div> 
+  </div>
+</body>
+</html>
+
+
